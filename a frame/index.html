@@ -1,0 +1,27 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <script src="aframe.min.js"></script>
+        <!-- <script src="script\script.js"></script> -->
+        <title>A-frame scene</title>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <img id="boxTexture" src="mYmmbrp.jpg">
+                <img id="skyTexture" src="sechelt.jpg">
+                <img id="floorTexture" src="floor.jpg">
+            </a-assets>  
+            <a-sky src="#skyTexture"></a-sky>
+            <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+            
+            <a-plane src="#floorTexture" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
+            
+            <a-light type="ambient" color="#445451"></a-light>
+            <a-light type="point" intensity="2" position="2 4 4"></a-light>
+            
+            <a-text value="Cube" color="#BBB" position="-0.5 0.2 -3" scale="1.5 1.5 1.5"></a-text>
+
+        </a-scene>        
+    </body>
+</html>
